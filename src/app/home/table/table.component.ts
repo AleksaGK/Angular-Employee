@@ -15,7 +15,6 @@ export class TableComponent implements OnInit {
 
   ngOnInit(): void {
     this.employeeService.getEmployees().subscribe((data) => {
-      console.log(data);
       this.employees = data;
       this.isLoading = false;
     });

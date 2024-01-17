@@ -7,10 +7,18 @@ import { HomeComponent } from './home/home.component';
 import { TableComponent } from './home/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { NgChartsModule } from 'ng2-charts';
+import { PieChartComponent } from './home/pie-chart/pie-chart.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, TableComponent, SpinnerComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    TableComponent,
+    SpinnerComponent,
+    PieChartComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgChartsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
