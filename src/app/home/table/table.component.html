@@ -1,0 +1,19 @@
+<app-spinner [loading]="isLoading"></app-spinner>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Total time in month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let employee of employees"
+      [ngClass]="{ redRow: employee.hours < 100 }"
+    >
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.hours }} hrs</td>
+    </tr>
+  </tbody>
+</table>

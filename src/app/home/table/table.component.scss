@@ -1,0 +1,25 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  tbody td {
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .redRow {
+    background-color: coral;
+  }
+}
